@@ -7,9 +7,9 @@ namespace DevFreela.Payments.API.Controllers
     [Route("api/payments")]
     public class PaymentsController:ControllerBase
     {
-        private readonly PaymentService _paymentService;
+        private readonly IPaymentService _paymentService;
 
-        public PaymentsController(PaymentService paymentService)
+        public PaymentsController(IPaymentService paymentService)
         {
             _paymentService = paymentService;
         }
