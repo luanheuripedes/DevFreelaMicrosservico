@@ -25,3 +25,4 @@ C:\Users\Cpu\Documents\LUAN\.NET Direto\DevFreela.Microsservicos\DevFreela.Payme
 C:\Users\Cpu\Documents\LUAN\.NET Direto\DevFreela.Microsservicos\DevFreela.Payments\DevFreela.Payments.API\obj\Debug\net6.0\DevFreela.Payments.API.pdb
 C:\Users\Cpu\Documents\LUAN\.NET Direto\DevFreela.Microsservicos\DevFreela.Payments\DevFreela.Payments.API\obj\Debug\net6.0\DevFreela.Payments.API.genruntimeconfig.cache
 C:\Users\Cpu\Documents\LUAN\.NET Direto\DevFreela.Microsservicos\DevFreela.Payments\DevFreela.Payments.API\obj\Debug\net6.0\ref\DevFreela.Payments.API.dll
+C:\Users\Cpu\Documents\LUAN\.NET Direto\DevFreela.Microsservicos\DevFreela.Payments\DevFreela.Payments.API\bin\Debug\net6.0\RabbitMQ.Client.dll

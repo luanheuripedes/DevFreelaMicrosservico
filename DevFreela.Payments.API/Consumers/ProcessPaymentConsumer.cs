@@ -11,6 +11,8 @@ namespace DevFreela.Payments.API.Consumers
     public class ProcessPaymentConsumer : BackgroundService
     {
         private const string queue = "Payments";
+        private const string payment_approved_queue = "PaymentsApproved";
+
         //para criar a conexão com o rabbitMq
         private readonly IConnection _connection;
 
@@ -33,9 +35,17 @@ namespace DevFreela.Payments.API.Consumers
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
 
-            //caso a mensagem nao exista ela é criada agora
+            //caso a mensagem nao exista ela é criada agora Pagamento
             _channel.QueueDeclare(
                 queue: queue,
+                durable: false,
+                exclusive: false,
+                autoDelete: false,
+                arguments: null);
+
+            //caso a mensagem nao exista ela é criada agora Pagamento Aprovvados
+            _channel.QueueDeclare(
+                queue: payment_approved_queue,
                 durable: false,
                 exclusive: false,
                 autoDelete: false,
@@ -60,6 +70,18 @@ namespace DevFreela.Payments.API.Consumers
 
                 ProcessPayment(paymentInfo);
 
+
+                var paymentApproved = new PaymentApprovedIntegrationEvent(paymentInfo.IdProject);
+                var paymentApprovedJson = JsonSerializer.Serialize(paymentApproved);
+                var paymentApprovedBytes = Encoding.UTF8.GetBytes(paymentApprovedJson);
+
+                //realiza a publicação da mensagem em uma fla
+                _channel.BasicPublish(
+                    exchange: "",
+                    routingKey: payment_approved_queue,
+                    basicProperties: null,
+                    body: paymentApprovedBytes
+                    );
 
                 //digo para o mensagerbroken que a mensagem foi recebida
                 _channel.BasicAck(eventArgs.DeliveryTag, false);
