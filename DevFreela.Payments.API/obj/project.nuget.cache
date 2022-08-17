@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "hTHhHZYBaM0j6wqPu1qIZw+C3GYh1qI2YzReYA7lbkwrpJMco+JD9P8Yvi1AtzoKlVwXYD2uNr7CAJgu+Oebfg==",
+  "dgSpecHash": "ERax8nBtmw1qx80Q5xwBGq/x2cwcvFK0Xyb+mB5CTgRE6CafK/TCHbNYjkll/2ZRc0ezWP3qCgCOtAkDe9RBxg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cpu\\Documents\\LUAN\\.NET Direto\\DevFreela.Microsservicos\\DevFreela.Payments\\DevFreela.Payments.API\\DevFreela.Payments.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cpu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Cpu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Cpu\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
     "C:\\Users\\Cpu\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Cpu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\Cpu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\Cpu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "C:\\Users\\Cpu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\Cpu\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Cpu\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
